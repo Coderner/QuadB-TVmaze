@@ -2,6 +2,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './App.css';
 import Home from "./components/Home";
 import ShowSummary from './components/ShowSummary';
+import Header from './components/Header';
 
 function App() {
 
