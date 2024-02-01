@@ -1,7 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import Header from './Header';
 import ShowCard from './ShowCard';
-import {Link} from "react-router-dom";
 
 const Home = () => {
 
@@ -27,9 +26,7 @@ const Home = () => {
          <div className="flex flex-wrap px-20 gap-y-12 justify-between">
              { tvShows?.map((show)=>{
                  return (
-                    <Link to={"/show/"+show.show.id} key={show.show.id}>
-                      <ShowCard {...show.show}/>
-                    </Link>
+                      <ShowCard key={show?.show?.id} {...show?.show}/>
                  )
              })}
           </div>
