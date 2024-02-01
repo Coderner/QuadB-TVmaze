@@ -18,9 +18,12 @@ const Home = () => {
   }
 
   return (
-    <div className='h-full w-full bg-black'>
+    <div className='min-h-full h-fit w-full bg-black'>
          <Header/>
-         <div className="flex flex-wrap px-2 gap-8">
+         <div className='text-white text-xl my-8 px-20'>
+           <p>"Welcome to <span>TV-maze</span>, where entertainment knows no boundaries! Dive into a world of endless streaming possibilities with our vast library of movies, series, and exclusive content. Immerse yourself in the ultimate streaming experience – anytime, anywhere. Your entertainment, your way."</p>
+         </div>
+         <div className="flex flex-wrap px-20 gap-y-12 justify-between">
              { tvShows?.map((show)=>{
                  return (
                     <ShowCard key={show.show.id} {...show.show}/>
